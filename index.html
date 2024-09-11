@@ -9,7 +9,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -20,12 +19,12 @@
       <div class="floor-input-container">
         <label for="floor">Number of floors:</label>
         <br />
-        <input type="number" name="floor" id="floor" required />
+        <input type="number" name="floor" id="floor" min="1" required />
       </div>
       <div class="lift-input-container">
         <label for="lift">Number of lifts:</label>
         <br />
-        <input type="number" name="lift" id="lift" required />
+        <input type="number" name="lift" id="lift" min="1" required />
       </div>
       <div class="generate-button-container">
         <button class="generate-button">Generate</button>
