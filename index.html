@@ -31,4 +31,14 @@
       </div>
     </form>
   </body>
+  <script>
+    const allInput = document.querySelectorAll("input");
+    allInput.forEach((input) => {
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+        }
+      });
+    });
+  </script>
 </html>
