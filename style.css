@@ -6,7 +6,6 @@ body {
   color: white;
   font-family: "Roboto", sans-serif;
   margin: 0;
-
 }
 header h1 {
   text-align: center;
@@ -39,20 +38,39 @@ form input {
   justify-content: center;
 }
 .generate-button {
-  padding: 4px 16px;
+  background-color: #ea4c89;
   border-radius: 8px;
-  font-size: 16px;
-  background-color: rgba(202, 199, 199, 1);
-  border: 1px solid black;
-}
-.generate-button:active{
-  background-color: rgba(255, 255, 255, 1);
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
+.generate-button:active {
+  background-color: #e30062;
+}
 
-@media(width<=480px){
-  header h1{
+@media (width<=480px) {
+  header h1 {
     font-size: 24px;
-
   }
 }
