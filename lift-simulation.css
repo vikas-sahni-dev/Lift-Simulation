@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding-inline: 2rem;
+}
+.back-button-container {
+  margin-top: 24px;
+}
+.back-button-container img {
+  max-width: 30px;
+}
+
+.lift-simulation-container {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-inline: auto;
+  max-width: max-content;
+}
+
+.show-overflow-lifts {
+  overflow-x: scroll;
+}
+
+.one-floor {
+  display: flex;
+  gap: 16px;
+  position: relative;
+  border-bottom: 1px solid black;
+  height: 100px;
+  /* padding-block: 4px; */
+}
+
+.floor-number-and-controls-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 1rem;
+}
+.floor-number-and-controls-container .controls-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.up,
+.down {
+  padding: 0.5rem;
+  width: 50px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.up {
+  background-color: #00a501;
+}
+.down {
+  background-color: #f9ba00;
+}
+.lift-container {
+  padding-inline: 1rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+.lift {
+  position: relative;
+}
+.lift-doors {
+  display: flex;
+  overflow: hidden;
+}
+.lift-doors > div {
+  height: 80px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.358);
+  border: 2px solid black;
+}
+.lift-doors .left-door-lift {
+  border-right: 0px solid;
+}
+
+.lift-open {
+  height: 80px;
+  width: 80px;
+  background-color: rgb(88, 99, 93);
+  background-color: rgba(0, 0, 0, 0.358);
+}
+
+.lift-open .left-door-lift {
+  border-right: 1px solid;
+  position: relative;
+
+  animation: openLiftDoorsSlowlyForLeftDoor 5s ease-in 1;
+}
+.lift-open .right-door-lift {
+  border-left: 0px solid;
+  position: relative;
+
+  animation: openLiftDoorsSlowlyForRightDoor 5s ease-in 1;
+}
+
+
+/* .floor-1{
+  padding-bottom: 0;
+  padding-top: 8px;
+} */
+ 
+
+@keyframes openLiftDoorsSlowlyForLeftDoor {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: -40px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes openLiftDoorsSlowlyForRightDoor {
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: -40px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+/* .move-lift{
+  position: relative;
+  animation: try 2s ease-in-out 1 forwards;
+
+
+} */
+/* @keyframes try {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 300px;
+  }
+  100% {
+    bottom: 600px;
+  }
+} */

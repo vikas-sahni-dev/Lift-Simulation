@@ -1,0 +1,7 @@
+//check this varaible
+ liftFloorNumber
+
+
+
+ //check
+ if all lift is moving then this fn select lift  will give ""
