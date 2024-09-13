@@ -31,8 +31,10 @@ for (let i = 1; i <= floorInput; i++) {
   
 
   `;
-
+  
   const controlButtons = oneFloor.querySelectorAll(".control-btn");
+ 
+  
   controlButtons.forEach((controlButton) => {
     controlButton.addEventListener("click", () => {
       const floorNumber = oneFloor.querySelector(".floor-count").innerText;
