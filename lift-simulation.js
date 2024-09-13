@@ -55,7 +55,7 @@ for (let i = 1; i <= liftInput; i++) {
       <div class="lift ${i}">
         <div>
           <div class="lift-doors">
-            <div class="left-door-lift">${i}</div>
+            <div class="left-door-lift"></div>
             <div class="right-door-lift"></div>
           </div>
         </div>
