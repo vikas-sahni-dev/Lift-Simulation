@@ -32,7 +32,6 @@ body {
   /* why relative */
   border-bottom: 1px solid black;
   height: 100px;
-  /* padding-block: 4px; */
 }
 
 .floor-number-and-controls-container {
